@@ -3,48 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>junctionxhanoiblog.github.io/authors/</loc>
+    <loc>https://junctionxhanoiblog.github.io/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="junctionxhanoiblog.github.io/vi/authors/"
+                href="https://junctionxhanoiblog.github.io/vi/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="junctionxhanoiblog.github.io/authors/"
+                href="https://junctionxhanoiblog.github.io/authors/"
                 />
   </url>
   
   <url>
-    <loc>junctionxhanoiblog.github.io/contribute/</loc>
+    <loc>https://junctionxhanoiblog.github.io/contribute/</loc>
   </url>
   
   <url>
-    <loc>junctionxhanoiblog.github.io/</loc>
+    <loc>https://junctionxhanoiblog.github.io/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="junctionxhanoiblog.github.io/vi/"
+                href="https://junctionxhanoiblog.github.io/vi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="junctionxhanoiblog.github.io/"
+                href="https://junctionxhanoiblog.github.io/"
                 />
   </url>
   
   <url>
-    <loc>junctionxhanoiblog.github.io/tags/</loc>
+    <loc>https://junctionxhanoiblog.github.io/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="junctionxhanoiblog.github.io/vi/tags/"
+                href="https://junctionxhanoiblog.github.io/vi/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="junctionxhanoiblog.github.io/tags/"
+                href="https://junctionxhanoiblog.github.io/tags/"
                 />
   </url>
   

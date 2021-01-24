@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>junctionXhanoi</title>
-    <link>junctionxhanoiblog.github.io/</link>
+    <link>https://junctionxhanoiblog.github.io/</link>
     <description>Recent content on junctionXhanoi</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="junctionxhanoiblog.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://junctionxhanoiblog.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contribution Guide to JunctionXHanoi Blog</title>
-      <link>junctionxhanoiblog.github.io/contribute/</link>
+      <link>https://junctionxhanoiblog.github.io/contribute/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>junctionxhanoiblog.github.io/contribute/</guid>
+      <guid>https://junctionxhanoiblog.github.io/contribute/</guid>
       <description>First of all, thank you for sharing your ideas, knowledge, opinions 🎉🎉 You are awesome and we love you 😍😍
 ️🧡💛💚💙💜🖤
 The following is a set of guidelines for contributing to our blog. We tried to be as comprehensive as possible, but if you feel that there is more to this, please feel free to propose changes to this in a pull request.
