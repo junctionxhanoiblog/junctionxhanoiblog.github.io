@@ -5,7 +5,17 @@
     <link>https://junctionxhanoiblog.github.io/</link>
     <description>Recent content on junctionXhanoi</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://junctionxhanoiblog.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Dec 2019 14:28:16 +0700</lastBuildDate><atom:link href="https://junctionxhanoiblog.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Revert to a Good Commit</title>
+      <link>https://junctionxhanoiblog.github.io/posts/git-revert-to-a-good-commit/</link>
+      <pubDate>Sun, 01 Dec 2019 14:28:16 +0700</pubDate>
+      
+      <guid>https://junctionxhanoiblog.github.io/posts/git-revert-to-a-good-commit/</guid>
+      <description>Today my co-worker asked me how to revert to an old and good commit on master ( after you accidentally merged dev branch to master ). There are many ways to do that, for example we can use reset to discard all wrong commit to revert back, like undo when writing text. You can find others way onthis topic on Stack Overflow But the problem is too many options, we dont know which one is good, or even dont need to understand - it just works.</description>
+    </item>
+    
     <item>
       <title>Contribution Guide to JunctionXHanoi Blog</title>
       <link>https://junctionxhanoiblog.github.io/contribute/</link>

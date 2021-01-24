@@ -5,6 +5,34 @@
     <link>https://junctionxhanoiblog.github.io/tags/</link>
     <description>Recent content in Tags on junctionXhanoi</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://junctionxhanoiblog.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Dec 2019 14:28:16 +0700</lastBuildDate><atom:link href="https://junctionxhanoiblog.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blog</title>
+      <link>https://junctionxhanoiblog.github.io/tags/blog/</link>
+      <pubDate>Sun, 01 Dec 2019 14:28:16 +0700</pubDate>
+      
+      <guid>https://junctionxhanoiblog.github.io/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://junctionxhanoiblog.github.io/tags/git/</link>
+      <pubDate>Sun, 01 Dec 2019 14:28:16 +0700</pubDate>
+      
+      <guid>https://junctionxhanoiblog.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>trick</title>
+      <link>https://junctionxhanoiblog.github.io/tags/trick/</link>
+      <pubDate>Sun, 01 Dec 2019 14:28:16 +0700</pubDate>
+      
+      <guid>https://junctionxhanoiblog.github.io/tags/trick/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
