@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>junctionxhanoiblog.github.io/vi/authors/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="junctionxhanoiblog.github.io/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="junctionxhanoiblog.github.io/vi/authors/"
+                />
+  </url>
+  
+  <url>
+    <loc>junctionxhanoiblog.github.io/vi/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="junctionxhanoiblog.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="junctionxhanoiblog.github.io/vi/"
+                />
+  </url>
+  
+  <url>
+    <loc>junctionxhanoiblog.github.io/vi/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="junctionxhanoiblog.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="junctionxhanoiblog.github.io/vi/tags/"
+                />
+  </url>
+  
+</urlset>
