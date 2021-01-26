@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Toán tử ... (spread) trong Javascript :: junctionXhanoi — Hack the future</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Cách dùng cơ bản của toán tử spread"/>
+<meta name="keywords" content="javascript"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://junctionxhanoiblog.github.io/posts/three-dot-in-javascript/" />
+
+
+<link rel="stylesheet" href="https://junctionxhanoiblog.github.io/assets/style.css">
+
+  <link rel="stylesheet" href="https://junctionxhanoiblog.github.io/assets/green.css">
+
+
+
+<link rel="stylesheet" href="https://junctionxhanoiblog.github.io/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://junctionxhanoiblog.github.io/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="https://junctionxhanoiblog.github.io/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Toán tử ... (spread) trong Javascript :: junctionXhanoi — Hack the future" />
+<meta name="twitter:description" content="Cách dùng cơ bản của toán tử spread" />
+<meta name="twitter:site" content="https://junctionxhanoiblog.github.io" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="https://miro.medium.com/max/768/1*Js0Y20MwjcTnVAe7KjDXNg.png">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Toán tử ... (spread) trong Javascript :: junctionXhanoi — Hack the future">
+<meta property="og:description" content="Cách dùng cơ bản của toán tử spread" />
+<meta property="og:url" content="https://junctionxhanoiblog.github.io/posts/three-dot-in-javascript/" />
+<meta property="og:site_name" content="Toán tử ... (spread) trong Javascript" />
+<meta property="og:image" content="https://miro.medium.com/max/768/1*Js0Y20MwjcTnVAe7KjDXNg.png">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2021-01-26 09:38:16 &#43;0700 &#43;0700" />
+
+
+
+
+
+
+
+
+<link href="/prism-onedark.css" rel="stylesheet" />
+
+</head>
+<body class="en">
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="https://junctionxhanoiblog.github.io">
+  <div class="logo">
+    junctionXhanoi
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">about</a></li>
+        
+      
+        
+          <li><a href="https://junctionxhanoiblog.github.io/contribute">contribute</a></li>
+        
+      
+      
+    
+
+    
+    <div class="spacer"></div>
+    <ul class="language-selector">
+      <ul class="language-selector-current">
+          <li>english ▾</li>
+      </ul>
+      <ul class="language-selector__more hidden">
+        
+        <li><a href="https://junctionxhanoiblog.github.io/">english</a></li>
+        
+        <li><a href="https://junctionxhanoiblog.github.io/vi/">viet</a></li>
+        
+      </ul>
+    </ul>
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">about</a></li>
+      
+    
+      
+        <li><a href="https://junctionxhanoiblog.github.io/contribute">contribute</a></li>
+      
+    
+    
+    <hr />
+        
+          <li>
+            <a href="https://junctionxhanoiblog.github.io/">english</a>
+          </li>
+        
+          <li>
+            <a href="https://junctionxhanoiblog.github.io/vi/">viet</a>
+          </li>
+        
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://junctionxhanoiblog.github.io/posts/three-dot-in-javascript/">Toán tử &hellip; (spread) trong Javascript</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2021-01-26
+    </span>
+    
+    
+    <span class="post-author">:: 
+      
+        
+        
+    
+    
+        <a href="https://junctionxhanoiblog.github.io/authors/ngdmau/" />ngdmau</a>
+    
+
+      
+    </span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    <a href="https://junctionxhanoiblog.github.io/tags/javascript/">#javascript</a>&nbsp;
+    
+    <a href="https://junctionxhanoiblog.github.io/tags/spread/">#spread</a>&nbsp;
+    
+    <a href="https://junctionxhanoiblog.github.io/tags/three-dots/">#three dots</a>&nbsp;
+    
+  </span>
+  
+
+  
+  <img src="https://miro.medium.com/max/768/1*Js0Y20MwjcTnVAe7KjDXNg.png" class="post-cover" />
+  
+
+  <div class="post-content">
+    <p>Toán tử spread là một tính năng mới được bổ sung vào Javascript ES6. Toán tử này nhận đầu vào là một iterable object rồi expands it into individual elements.</p>
+<p>Nó được sử dụng chủ yếu để tạo bản sao của các đối tượng trong Javascript. Việc sử dụng spread thường giúp cho code trở nên ngắn gọn và dễ đọc hơn.</p>
+<p>Cú pháp: Toán tử spread được ký hiệu bằng dấu ba chấm: &hellip;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">array</span> <span style="color:#f92672">=</span> [...<span style="color:#a6e22e">value</span>]
+</code></pre></div><p>Ta sẽ sử dụng các ví dụ liên quan đến mảng (array), do nó là iterable object được dùng nhiều nhất trong JS.<br>
+<strong>Ví dụ 1. Copy một mảng</strong><br>
+Thông thường, nếu ta làm như sau:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">array1</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>];
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">array2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">array1</span>;
+<span style="color:#a6e22e">array1</span>.<span style="color:#a6e22e">push</span>(<span style="color:#ae81ff">9</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">array2</span>);
+</code></pre></div><p>Khi đó, mọi thay đổi ở mảng array1 sẽ ảnh hưởng đến array2. Kết quả nhận được (thường không phải mong muốn của dev lắm) sẽ là:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>1, 3, 5, 7, 9<span style="color:#f92672">]</span>
+</code></pre></div><p>Sử dụng toán tử spread, ta chỉ cần:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">array1</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>];
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">array2</span> <span style="color:#f92672">=</span> [...<span style="color:#a6e22e">array1</span>];
+<span style="color:#a6e22e">array2</span>.<span style="color:#a6e22e">push</span>(<span style="color:#ae81ff">9</span>)
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">array2</span>)
+</code></pre></div><p>Kết quả:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>1, 3, 5, 7<span style="color:#f92672">]</span>
+</code></pre></div><p><strong>Ví dụ 2. Insert một số phần tử của một mảng vào một mảng khác:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// append mảng desserts vào phía sau của mảng desserts1
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">desserts</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;cake&#39;</span>, <span style="color:#e6db74">&#39;cookie&#39;</span>, <span style="color:#e6db74">&#39;donut&#39;</span>];
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">desserts1</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;icecream&#39;</span>, <span style="color:#e6db74">&#39;flan&#39;</span>, <span style="color:#e6db74">&#39;frozen yoghurt&#39;</span>, ...<span style="color:#a6e22e">desserts</span>];
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">desserts</span>);
+
+<span style="color:#75715e">// append mảng desserts ngay sau phần tử &#39;flan&#39;
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">desserts2</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;icecream&#39;</span>, <span style="color:#e6db74">&#39;flan&#39;</span>, ...<span style="color:#a6e22e">deserts</span>, <span style="color:#e6db74">&#39;frozen yoghurt&#39;</span>];
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">desserts2</span>);  
+</code></pre></div><p>Kết quả là:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span> <span style="color:#e6db74">&#39;icecream&#39;</span>, <span style="color:#e6db74">&#39;flan&#39;</span>, <span style="color:#e6db74">&#39;frozen yoghurt&#39;</span>, <span style="color:#e6db74">&#39;cake&#39;</span>, <span style="color:#e6db74">&#39;cookie&#39;</span>, <span style="color:#e6db74">&#39;donut&#39;</span> <span style="color:#f92672">]</span> 
+<span style="color:#f92672">[</span> <span style="color:#e6db74">&#39;icecream&#39;</span>, <span style="color:#e6db74">&#39;flan&#39;</span>, <span style="color:#e6db74">&#39;cake&#39;</span>, <span style="color:#e6db74">&#39;cookie&#39;</span>, <span style="color:#e6db74">&#39;donut&#39;</span>, <span style="color:#e6db74">&#39;frozen yoghurt&#39;</span> <span style="color:#f92672">]</span>
+</code></pre></div><p><strong>Ví dụ 3. Chuyển mảng thành tham số:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">multiply</span>(<span style="color:#a6e22e">number1</span>, <span style="color:#a6e22e">number2</span>, <span style="color:#a6e22e">number3</span>) {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">number1</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">number2</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">number3</span>);
+}
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">numbers</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>];
+<span style="color:#a6e22e">multiply</span>(...<span style="color:#a6e22e">numbers</span>);
+</code></pre></div><p>Ở đây, thay vì truyền các tham số lần lượt là numbers[0], numbers[1] và numbers[2], toán tử spread cho phép chuyển 1 mảng thành một loạt các phần tử đơn lẻ tương ứng.</p>
+<p>Trên đây là 3 ví dụ cơ bản về cách sử dụng toán tử spread trong Javascript, bài viết được dịch lại từ <a href="https://codeburst.io/what-are-three-dots-in-javascript-6f09476b03e1">codeburst</a></p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      
+      <span class="button next">
+        <a href="https://junctionxhanoiblog.github.io/posts/git-revert-to-a-good-commit/">
+          <span class="button__text">Git Revert to a Good Commit</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2021 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://junctionxhanoiblog.github.io/assets/main.js"></script>
+<script src="https://junctionxhanoiblog.github.io/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
