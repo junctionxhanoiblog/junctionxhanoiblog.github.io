@@ -6,18 +6,7 @@
     <description>Recent content on junctionXhanoi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Jan 2021 09:38:16 +0700</lastBuildDate><atom:link href="https://junctionxhanoiblog.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Toán tử ... (spread) trong Javascript</title>
-      <link>https://junctionxhanoiblog.github.io/posts/three-dot-in-javascript/</link>
-      <pubDate>Tue, 26 Jan 2021 09:38:16 +0700</pubDate>
-      
-      <guid>https://junctionxhanoiblog.github.io/posts/three-dot-in-javascript/</guid>
-      <description>Toán tử spread là một tính năng mới được bổ sung vào Javascript ES6. Toán tử này nhận đầu vào là một iterable object rồi expands it into individual elements.
-Nó được sử dụng chủ yếu để tạo bản sao của các đối tượng trong Javascript. Việc sử dụng spread thường giúp cho code trở nên ngắn gọn và dễ đọc hơn.
-Cú pháp: Toán tử spread được ký hiệu bằng dấu ba chấm: &amp;hellip;</description>
-    </item>
-    
+    <lastBuildDate>Sun, 01 Dec 2019 14:28:16 +0700</lastBuildDate><atom:link href="https://junctionxhanoiblog.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git Revert to a Good Commit</title>
       <link>https://junctionxhanoiblog.github.io/posts/git-revert-to-a-good-commit/</link>
