@@ -2,19 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on junctionXhanoi</title>
+    
+    
+    
     <link>https://junctionxhanoiblog.github.io/vi/authors/</link>
     <description>Recent content in Authors on junctionXhanoi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Jan 2021 09:38:16 +0700</lastBuildDate><atom:link href="https://junctionxhanoiblog.github.io/vi/authors/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ngdmau</title>
-      <link>https://junctionxhanoiblog.github.io/vi/authors/ngdmau/</link>
-      <pubDate>Tue, 26 Jan 2021 09:38:16 +0700</pubDate>
-      
-      <guid>https://junctionxhanoiblog.github.io/vi/authors/ngdmau/</guid>
-      <description></description>
-    </item>
+    
+	<atom:link href="https://junctionxhanoiblog.github.io/vi/authors/index.xml" rel="self" type="application/rss+xml" />
+    
     
   </channel>
 </rss>

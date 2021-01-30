@@ -2,20 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>javascript on junctionXhanoi</title>
+    
+    
+    
     <link>https://junctionxhanoiblog.github.io/tags/javascript/</link>
     <description>Recent content in javascript on junctionXhanoi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Jan 2021 09:38:16 +0700</lastBuildDate><atom:link href="https://junctionxhanoiblog.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Jan 2021 09:38:16 +0700</lastBuildDate>
+    
+	<atom:link href="https://junctionxhanoiblog.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Toán tử ... (spread) trong Javascript</title>
       <link>https://junctionxhanoiblog.github.io/posts/three-dot-in-javascript/</link>
       <pubDate>Tue, 26 Jan 2021 09:38:16 +0700</pubDate>
       
       <guid>https://junctionxhanoiblog.github.io/posts/three-dot-in-javascript/</guid>
-      <description>Toán tử spread là một tính năng mới được bổ sung vào Javascript ES6. Toán tử này nhận đầu vào là một iterable object rồi expands it into individual elements.
-Nó được sử dụng chủ yếu để tạo bản sao của các đối tượng trong Javascript. Việc sử dụng spread thường giúp cho code trở nên ngắn gọn và dễ đọc hơn.
-Cú pháp: Toán tử spread được ký hiệu bằng dấu ba chấm: &amp;hellip;</description>
+      <description>
+        
+          &lt;img src=&#34;https://miro.medium.com/max/768/1*Js0Y20MwjcTnVAe7KjDXNg.png&#34;/&gt;
+          
+        
+        
+        
+          Cách dùng cơ bản của toán tử spread
+          
+        
+        </description>
     </item>
     
   </channel>

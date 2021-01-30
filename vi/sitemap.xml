@@ -4,7 +4,6 @@
   
   <url>
     <loc>https://junctionxhanoiblog.github.io/vi/authors/</loc>
-    <lastmod>2021-01-26T09:38:16+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -18,13 +17,7 @@
   </url>
   
   <url>
-    <loc>https://junctionxhanoiblog.github.io/vi/tags/javascript/</loc>
-    <lastmod>2021-01-26T09:38:16+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://junctionxhanoiblog.github.io/vi/</loc>
-    <lastmod>2021-01-26T09:38:16+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -38,33 +31,7 @@
   </url>
   
   <url>
-    <loc>https://junctionxhanoiblog.github.io/vi/authors/ngdmau/</loc>
-    <lastmod>2021-01-26T09:38:16+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://junctionxhanoiblog.github.io/vi/posts/</loc>
-    <lastmod>2021-01-26T09:38:16+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://junctionxhanoiblog.github.io/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://junctionxhanoiblog.github.io/vi/posts/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://junctionxhanoiblog.github.io/vi/tags/spread/</loc>
-    <lastmod>2021-01-26T09:38:16+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://junctionxhanoiblog.github.io/vi/tags/</loc>
-    <lastmod>2021-01-26T09:38:16+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -75,16 +42,6 @@
                 hreflang="vi"
                 href="https://junctionxhanoiblog.github.io/vi/tags/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://junctionxhanoiblog.github.io/vi/tags/three-dots/</loc>
-    <lastmod>2021-01-26T09:38:16+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://junctionxhanoiblog.github.io/vi/posts/three-dot-in-javascript/</loc>
-    <lastmod>2021-01-26T09:38:16+07:00</lastmod>
   </url>
   
 </urlset>
