@@ -202,8 +202,8 @@ Cú pháp: Toán tử spread được ký hiệu bằng dấu ba chấm: &amp;he
 <p>Nó được sử dụng chủ yếu để tạo bản sao của các đối tượng trong Javascript. Việc sử dụng spread thường giúp cho code trở nên ngắn gọn và dễ đọc hơn.</p>
 <p>Cú pháp: Toán tử spread được ký hiệu bằng dấu ba chấm: &hellip;</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">array</span> <span style="color:#f92672">=</span> [...<span style="color:#a6e22e">value</span>]
-</code></pre></div><p>Ta sẽ sử dụng các ví dụ liên quan đến mảng (array), do nó là iterable object được dùng nhiều nhất trong JS.<br>
-<strong>Ví dụ 1. Copy một mảng</strong><br>
+</code></pre></div><p>Ta sẽ sử dụng các ví dụ liên quan đến mảng (array), do nó là iterable object được dùng nhiều nhất trong JS.
+<strong>Ví dụ 1. Copy một mảng</strong>
 Thông thường, nếu ta làm như sau:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">array1</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>];
 <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">array2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">array1</span>;
@@ -226,9 +226,9 @@ Thông thường, nếu ta làm như sau:</p>
 
 <span style="color:#75715e">// append mảng desserts ngay sau phần tử &#39;flan&#39;
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">desserts2</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;icecream&#39;</span>, <span style="color:#e6db74">&#39;flan&#39;</span>, ...<span style="color:#a6e22e">deserts</span>, <span style="color:#e6db74">&#39;frozen yoghurt&#39;</span>];
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">desserts2</span>);  
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">desserts2</span>);
 </code></pre></div><p>Kết quả là:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span> <span style="color:#e6db74">&#39;icecream&#39;</span>, <span style="color:#e6db74">&#39;flan&#39;</span>, <span style="color:#e6db74">&#39;frozen yoghurt&#39;</span>, <span style="color:#e6db74">&#39;cake&#39;</span>, <span style="color:#e6db74">&#39;cookie&#39;</span>, <span style="color:#e6db74">&#39;donut&#39;</span> <span style="color:#f92672">]</span> 
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span> <span style="color:#e6db74">&#39;icecream&#39;</span>, <span style="color:#e6db74">&#39;flan&#39;</span>, <span style="color:#e6db74">&#39;frozen yoghurt&#39;</span>, <span style="color:#e6db74">&#39;cake&#39;</span>, <span style="color:#e6db74">&#39;cookie&#39;</span>, <span style="color:#e6db74">&#39;donut&#39;</span> <span style="color:#f92672">]</span>
 <span style="color:#f92672">[</span> <span style="color:#e6db74">&#39;icecream&#39;</span>, <span style="color:#e6db74">&#39;flan&#39;</span>, <span style="color:#e6db74">&#39;cake&#39;</span>, <span style="color:#e6db74">&#39;cookie&#39;</span>, <span style="color:#e6db74">&#39;donut&#39;</span>, <span style="color:#e6db74">&#39;frozen yoghurt&#39;</span> <span style="color:#f92672">]</span>
 </code></pre></div><p><strong>Ví dụ 3. Chuyển mảng thành tham số:</strong></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">multiply</span>(<span style="color:#a6e22e">number1</span>, <span style="color:#a6e22e">number2</span>, <span style="color:#a6e22e">number3</span>) {
@@ -250,6 +250,13 @@ Thông thường, nếu ta làm như sau:</p>
             <hr />
           </div>
           <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="https://junctionxhanoiblog.github.io/posts/react-server-component/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">React Server Component</span>
+                </a>
+              </span>
             
             
               <span class="button next">

@@ -9,10 +9,29 @@
     <description>Recent content on junctionXhanoi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Jan 2021 09:38:16 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 06 Feb 2021 12:46:52 +0700</lastBuildDate>
     
 	<atom:link href="https://junctionxhanoiblog.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>React Server Component</title>
+      <link>https://junctionxhanoiblog.github.io/posts/react-server-component/</link>
+      <pubDate>Sat, 06 Feb 2021 12:46:52 +0700</pubDate>
+      
+      <guid>https://junctionxhanoiblog.github.io/posts/react-server-component/</guid>
+      <description>
+        
+          &lt;img src=&#34;https://miro.medium.com/max/1240/1*tGA71mQYRla0DpyfrIG5ig.png&#34;/&gt;
+          
+        
+        
+        
+          Giới thiệu tính năng mới nhất của react framework
+          
+        
+        </description>
+    </item>
     
     <item>
       <title>Toán tử ... (spread) trong Javascript</title>

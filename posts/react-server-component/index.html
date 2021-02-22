@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>
+        React Server Component ::
+        junctionXhanoi — Hack the future
+      </title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="Vậy React Server Component là gì ? Đội ngũ phát triển React gần đây vào 21/12/2020 đã giới thiệu về một tính năng mới của React mà mình nghĩ nó sẽ thay đổi cách xây dựng một ứng dụng web với react, như cách mà react hook đã làm. Ý tưởng của nghiên cứu này là giới thiệu thêm một loạt component mới (Server component).
+React Server Component cho phép lập trình viên xây dựng ứng dụng có thể quyết định việc render một react component ở phía server hay client, qua đó có thể tận dụng được khả năng tương tác cao của client-side app cũng như tốc độ tải trang của server-side app."
+/>
+<meta
+  name="keywords"
+  content="react"
+/>
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://junctionxhanoiblog.github.io/posts/react-server-component/" />
+
+
+
+
+
+<link rel="stylesheet" href="https://junctionxhanoiblog.github.io/assets/style.css" />
+
+<link rel="stylesheet" href="https://junctionxhanoiblog.github.io/style.css" />
+
+
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="144x144"
+  href="https://junctionxhanoiblog.github.io/img/apple-touch-icon-144-precomposed.png"
+/>
+<link rel="shortcut icon" href="https://junctionxhanoiblog.github.io/img/favicon.png" />
+
+
+<link href="https://junctionxhanoiblog.github.io/assets/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://junctionxhanoiblog.github.io/assets/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://junctionxhanoiblog.github.io/assets/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://junctionxhanoiblog.github.io/assets/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://junctionxhanoiblog.github.io/assets/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://junctionxhanoiblog.github.io/assets/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="React Server Component"/>
+<meta name="twitter:description" content="Giới thiệu tính năng mới nhất của react framework"/>
+
+
+
+<meta property="og:title" content="React Server Component" />
+<meta property="og:description" content="Giới thiệu tính năng mới nhất của react framework" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://junctionxhanoiblog.github.io/posts/react-server-component/" />
+<meta property="article:published_time" content="2021-02-06T12:46:52+07:00" />
+<meta property="article:modified_time" content="2021-02-06T12:46:52+07:00" /><meta property="og:site_name" content="junctionXhanoi" />
+
+
+
+
+
+
+  </head>
+  <body class="">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a
+  href="https://junctionxhanoiblog.github.io"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >junctionXhanoi</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">about</a></li>
+        
+      
+        
+          <li><a href="https://junctionxhanoiblog.github.io/contribute">contribute</a></li>
+        
+      
+      
+      
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">about</a></li>
+      
+    
+      
+        <li><a href="https://junctionxhanoiblog.github.io/contribute">contribute</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg
+  class="theme-toggler"
+  width="24"
+  height="24"
+  viewBox="0 0 48 48"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
+  />
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h1 class="post-title">React Server Component</h1>
+    <div class="post-meta">
+      
+        <span class="post-date">
+          2021-02-06
+        </span>
+
+        
+          
+        
+      
+
+      
+        <span class="post-author"
+          >— Written by dnthanh</span
+        >
+
+
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          <a href="https://junctionxhanoiblog.github.io/tags/react/">#react</a>&nbsp;
+        
+          <a href="https://junctionxhanoiblog.github.io/tags/server-component/">#server component</a>&nbsp;
+        
+          <a href="https://junctionxhanoiblog.github.io/tags/frontend/">#frontend</a>&nbsp;
+        
+      </span>
+    
+
+    
+      <figure class="post-cover">
+        
+          <img src="https://miro.medium.com/max/1240/1*tGA71mQYRla0DpyfrIG5ig.png" alt="React Server Component" />
+        
+
+        
+      </figure>
+    
+
+    <div class="post-content">
+      
+      <h1 id="vậy-react-server-component-là-gì-">Vậy React Server Component là gì ?</h1>
+<p>Đội ngũ phát triển React gần đây vào 21/12/2020 đã giới thiệu về một tính năng mới của React mà mình nghĩ nó sẽ thay đổi cách xây dựng một ứng dụng web với react, như cách mà react hook đã làm. Ý tưởng của nghiên cứu này là giới thiệu thêm một loạt component mới (Server component).</p>
+<p>React Server Component cho phép lập trình viên xây dựng ứng dụng có thể quyết định việc render một react component ở phía server hay client, qua đó có thể tận dụng được khả năng tương tác cao của client-side app cũng như tốc độ tải trang của server-side app.</p>
+<h2 id="lưu-ý">Lưu ý</h2>
+<p>Trước khi bắt đầu, bạn đọc nên chú ý React Server Component vẫn đang trong giải đoạn nghiên cứu.</p>
+<blockquote>
+<p>React core team quote:</p>
+<blockquote>
+<p>We are sharing this work in the spirit of transparency and to get initial feedback from the React community. There will be plenty of
+time for that, so don’t feel like you have to catch up right now!</p>
+</blockquote>
+</blockquote>
+<h2 id="bước-1-xem-video-giới-thiệu">Bước 1: Xem Video giới thiệu</h2>
+<!-- raw HTML omitted -->
+<h2 id="bước-2-clone-demo">Bước 2: Clone demo</h2>
+<p>Khi bạn đã xem video gới thiệu của nhóm phát triển react, bước tiếp theo là clone demo này về và vọc thôi. Demo này là một ứng dụng được xây dựng với React Server Component. Video ở trên đã đi qua các phần của demo code này và nhấn mạnh các điểm quan trọng trong cách hoạt động của Server Component và nhưng khả năng của chúng.</p>
+<h2 id="bước-3-đọc-react-server-component-rfc">Bước 3: Đọc React Server Component RFC</h2>
+<p>Bây giờ bạn đã xem video và vọc qua code demo. Nếu thấy hứng thú với tính năng mới này của React, bạn có thể tiếp tục với React.js RFCs repo để đọc về giới thiệu của React team một cách chi tiết hơn cũng như những thảo luận của lập trình viên trên toàn thế giới về chúng.</p>
+<p>Sau đây là một vài ý trong RFC:</p>
+<ul>
+<li>Server component sẽ được chạy ở phía server và không có tác động đến dung lượng của ứng dụng. Code của server component sẽ không được gửi đến trình duyệt của người dùng qua đó cải thiện thời gian khởi động của ứng dụng.</li>
+<li>Server component có thể truy cập trực tiếp tài nguyên phía backend (database, file system, &hellip;)</li>
+<li>Server component của thể tích hợp với client component. Ví dụL server component có thể tải dữ liệu ở phía server sau đó truyền cho client component qua props để CC (client component) có thể xử lý phần tương tác với người dùng.</li>
+<li>Server component có thể chọn client component nào được gửi đi, qua đó giảm lượng code xuống mức thấp nhất code thể.</li>
+<li>Server component có thể bảo toàn được trạng thái ở phía client.</li>
+<li>Lập trình viên có thể chia sẻ code của Server và Client, cho phép một component có thể render tĩnh ở phía server trong một số route và render ở phía client trong một số route khác.</li>
+</ul>
+<p>#Zero-Bundle-Size Components
+Khi phát triển ứng dụng, việc phải chọn một thư viện nào đó để hỗ trợ là rất thường xuyên. Ta sẽ cần một thư việc để render mardown hoặc một thư viện để xử lý ngày, những thư viện này khả năng cao sẽ làm tăng dung lượng của ứng dụng lên khá nhiều.</p>
+<p>Ví dụ, thư biện để render mardown có dung lượng là 240kB khi nén lại cũng nặng đến 74KB.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// NoteWithMarkdown.js
+</span><span style="color:#75715e">// NOTE: *before* Server Components.
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">marked</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;marked&#39;</span>; <span style="color:#75715e">// 35.9K (11.2K gzipped)
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">sanitizeHtml</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;sanitize-html&#39;</span>; <span style="color:#75715e">// 206K (63.3K gzipped)
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">NoteWithMarkdown</span>({<span style="color:#a6e22e">text</span>}) {
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">html</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sanitizeHtml</span>(<span style="color:#a6e22e">marked</span>(<span style="color:#a6e22e">text</span>));
+  <span style="color:#66d9ef">return</span> (<span style="color:#75715e">/* render */</span>);
+}
+</code></pre></div><p>Tuy nhiên nhiều phần của ứng dụng không cần đến nhưng thư viện nặng nề này. Server component sẽ cho phép lập trình viên render nhưng nội dung tĩnh ở phía server, tận dụng được khả năng của các thư viện trong khi không làm tăng dung lượng của ứng dụng.</p>
+<p>Nếu chúng ta viết lại đoạn code trên với server component, chúng ta có thể sử dụng đoạn code tương tự nhưng không cần chúng đến client, qua đó giảm được trên 240KB.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#960050;background-color:#1e0010">/ NoteWithMarkdown.server.js - Server Component === zero bundle size.</span>
+
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">marked</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;marked&#39;</span>; <span style="color:#75715e">// zero bundle size.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">sanitizeHtml</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;sanitize-html&#39;</span>; <span style="color:#75715e">// zero bundle size.
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">NoteWithMarkdown</span>({<span style="color:#a6e22e">text</span>}) {
+  <span style="color:#75715e">// same as before
+</span><span style="color:#75715e"></span>}
+</code></pre></div><p>#Tiếp theo
+Trên đây là toàn bộ sự hào hứng của tối với react server component. Tôi tin rằng tính năng mới này sẽ mang tới sự cải thiện về hiệu năng đáng kẻ ở React.JS website và chúng thực sự tuyệt vời cho mọi người phải không?!</p>
+<p>bài viết được dịch lại từ <a href="https://ahmadawais.com/react-server-components/">ahmadawais.com</a></p>
+
+    </div>
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h"
+              >read other posts</span
+            >
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+            
+              <span class="button next">
+                <a href="https://junctionxhanoiblog.github.io/posts/three-dot-in-javascript/">
+                  <span class="button__text">Toán tử ... (spread) trong Javascript</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+    
+      
+        
+
+      
+    
+  </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <a
+  href="https://junctionxhanoiblog.github.io"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >junctionXhanoi</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span
+          >© 2021 Powered by
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span
+        >
+        <span
+          >Theme created by
+          <a href="https://twitter.com/panr" target="_blank" rel="noopener">panr</a></span
+        >
+      </div>
+    
+  </div>
+</footer>
+
+<script src="https://junctionxhanoiblog.github.io/assets/main.js"></script>
+<script src="https://junctionxhanoiblog.github.io/assets/prism.js"></script>
+
+
+      
+    </div>
+
+    
+  </body>
+</html>
